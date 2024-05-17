@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Automation.Automation.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.06 s - in Automation.Automation.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.389 sec - in Automation.Automation.AppTest

@@ -3,6 +3,7 @@ package Automation.Automation;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -22,7 +23,9 @@ public class AppTest
     {
     	System.out.println("Hello Guys");
     	WebDriverManager.chromedriver().setup();
-    	driver = new ChromeDriver();
+    	ChromeOptions options = new ChromeOptions();
+    	options.addArguments("--remote-allow-origins=*");
+    	driver = new ChromeDriver(options);
     	driver.get("https://kunalazurecourse.azurewebsites.net/webapp/");
     	String text =driver.findElement(By.cssSelector("h1")).getText();
 		System.out.println(text);
