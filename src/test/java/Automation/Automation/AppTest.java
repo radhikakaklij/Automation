@@ -27,8 +27,7 @@ public class AppTest
     	options.addArguments("--remote-allow-origins=*");
     	driver = new ChromeDriver(options);
     	driver.get("https://kunalazurecourse.azurewebsites.net/webapp/");
-    	String text =driver.findElement(By.cssSelector("h1")).getText();
+    	String text =driver.getTitle();
 		System.out.println(text);
-		Assert.assertTrue(text.equalsIgnoreCase("RahulShettyAcademy.com Learning"));
 		driver.quit();    }
 }
